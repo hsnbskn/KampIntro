@@ -64,9 +64,8 @@ namespace LinqProject
         //LINQ yapısı ile filtreleme yapılırsa.
         static List<Product> GetProductsLinq(List<Product> products)
         {
-            return products.Where(product => product.UnitPrice > 5000 && product.UnitInStock > 3).ToList(); //aslında buda arka planda yeni bir listwe oluşturu.döngüde oluturur şarta uyanları alır. arka planda yapar
-        }//to.list ile listeye dönüştürür. where onu bir array olarak tutar.
-
+            return products.Where(product => product.UnitPrice > 5000 && product.UnitInStock > 3).ToList();
+        }
 
     }
 
